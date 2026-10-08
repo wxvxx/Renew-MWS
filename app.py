@@ -22,7 +22,7 @@ TG_BOT_TOKEN  = os.environ.get("TG_BOT_TOKEN") or ""    # TG 通知，可选
 
 # ------------- 代理配置 -------------
 IS_PROXY     = os.environ.get("IS_PROXY", "false").lower() == "true"   # 是否启用代理, 节点配置NODE_LINK节点自动开启
-PROXY_SERVER = os.environ.get("PROXY_SERVER", "").strip() or "http://127.0.0.1:1081"
+PROXY_SERVER = os.environ.get("PROXY_SERVER", "").strip() or "socks5://127.0.0.1:1080"
 
 # ------------- MWS 站点 / Discord OAuth 配置 -------------
 SITE_ORIGIN = "https://cloud.m-ws.cc"          # 控制台前端（续期 API 入口）
